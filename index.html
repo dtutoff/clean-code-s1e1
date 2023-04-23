@@ -5,23 +5,23 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="style.css" type="text/css" media="screen" charset="utf-8">
   </head>
-  <body>
+  <body class="app">
     <div class="app-info">
       <img src="./eisenhower-matrix.jpg">
       <a class="more-info" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
     </div>
     <div class="main-page-content">
       <p class="main-page-wrapper" id="top-section-list">
-        <label for="new-task">Add Item</label>
+        <label class="new-task-header" for="new-task">Add Item</label>
         <div class="task-row-wrapper">
-          <input class="task-input" id="new-task" type="text">
-          <button>Add</button>
+          <input class="task-input task-input-new" id="new-task" type="text">
+          <button class="add-button">Add</button>
         </div>
       </p>
-      <h3>Todo</h3>
-      <ul id="incomplete-tasks">
+      <h3 class="task-header">Todo</h3>
+      <ul class="app-list" id="incomplete-tasks">
         <li>
-          <input type="checkbox">
+          <input class="task-marker" type="checkbox">
           <label class="task-title">Pay Bills</label>
           <input class="task-input" type="text">
           <button class="edit-button">Edit</button>
@@ -30,7 +30,7 @@
           </button>
         </li>
         <li class="edit-mode">
-          <input type="checkbox">
+          <input class="task-marker" type="checkbox">
           <label class="task-title">Go Shopping</label>
           <input class="task-input" type="text" value="Go Shopping">
           <button class="edit-button">Save</button>
@@ -39,10 +39,10 @@
           </button>
         </li>
       </ul>
-      <h3>Completed</h3>
-      <ul id="completed-tasks">
+      <h3 class="task-header">Completed</h3>
+      <ul class="app-list" id="completed-tasks">
         <li>
-          <input type="checkbox" checked>
+          <input class="task-marker" type="checkbox" checked>
           <label class="task-title">See the Doctor</label>
           <input class="task-input" type="text">
           <button class="edit-button">Edit</button>
